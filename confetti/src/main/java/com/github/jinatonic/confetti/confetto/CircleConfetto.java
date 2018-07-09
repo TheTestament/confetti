@@ -52,8 +52,7 @@ public class CircleConfetto extends Confetto {
     }
 
     @Override
-    protected void drawInternal(Canvas canvas, Matrix matrix, Paint paint, float x, float y,
-            float rotation, float percentageAnimated) {
+    protected void drawInternal(Canvas canvas, Matrix matrix, Paint paint, float x, float y, float velocityX, float velocityY, float rotation, float velocityRotation, float percentageAnimated) {
         canvas.drawCircle(x + radius, y + radius, radius, paint);
     }
 }
